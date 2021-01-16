@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,15 +12,46 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <TextView
+        android:id="@+id/scan_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="130dp"
+        android:text="Scan Card Here"
+        android:textColor="@android:color/white" />
+
     <ImageView
         android:id="@+id/rectimage"
         android:layout_height="222.86dp"
         android:layout_width="390dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="155dp"
-        android:src="@drawable/rectangle"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/scan_text"
+        android:src="@drawable/rectangle" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/rectimage"-->
+<!--        android:layout_height="222.86dp"-->
+<!--        android:layout_width="390dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_marginTop="155dp"-->
+<!--        android:src="@drawable/rectangle"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/rectimage"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        android:layout_marginBottom="1400dp"-->
+<!--        android:text="Scan Card Here"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
